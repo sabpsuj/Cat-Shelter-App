@@ -1,5 +1,5 @@
 {
-  "name": "Cat Shelter App",
+  "name": "cat_shelter_app",
   "version": "1.0.0",
   "description": "Cat Shelter App",
   "main": "webpack.config.js",
@@ -23,5 +23,13 @@
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
     "react-router": "^3.0.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabpsuj/Cat-Shelter-App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sabpsuj/Cat-Shelter-App/issues"
+  },
+  "homepage": "https://github.com/sabpsuj/Cat-Shelter-App#readme"
 }
