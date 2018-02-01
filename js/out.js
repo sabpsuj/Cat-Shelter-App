@@ -9808,6 +9808,11 @@ var App = function (_React$Component5) {
             return _react2.default.createElement(
                 'div',
                 null,
+                _react2.default.createElement(
+                    'h1',
+                    null,
+                    'Find your new Kitty Friend!'
+                ),
                 _react2.default.createElement(SearchBar, { onChange: this.handleChange, textChange: this.handleTextChange,
                     filterText: this.state.filterText, likesKids: this.state.likesKids }),
                 ' ',

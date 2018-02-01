@@ -101,7 +101,9 @@ class App extends React.Component {
     };
 
     render() {
-        return <div><SearchBar onChange={this.handleChange} textChange={this.handleTextChange}
+        return <div>
+            <h1>Find your new Kitty Friend!</h1>
+            <SearchBar onChange={this.handleChange} textChange={this.handleTextChange}
                                filterText={this.state.filterText} likesKids={this.state.likesKids}/> <CatTable
             kitties={this.props.kitties} filterText={this.state.filterText} likesKids={this.state.likesKids}/></div>;
     }
