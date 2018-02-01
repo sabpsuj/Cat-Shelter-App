@@ -9762,9 +9762,9 @@ var SearchBar = function (_React$Component4) {
                 _react2.default.createElement('input', { style: { color: 'white', fontSize: '16px' }, type: 'text', placeholder: 'Search...', value: this.props.filterText,
                     onChange: this.props.textChange }),
                 _react2.default.createElement(
-                    'p',
-                    null,
-                    _react2.default.createElement('input', { type: 'checkbox', checked: this.props.likesKids, onChange: this.props.onChange }),
+                    'label',
+                    { htmlFor: 'check', className: 'checkbox' },
+                    _react2.default.createElement('input', { id: 'check', type: 'checkbox', checked: this.props.likesKids, onChange: this.props.onChange }),
                     'Only show kitties that likes kids'
                 )
             );

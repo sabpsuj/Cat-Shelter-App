@@ -72,8 +72,8 @@ class SearchBar extends React.Component {
             <form>
                 <input style={{color: 'white', fontSize: '16px'}} type="text" placeholder="Search..." value={this.props.filterText}
                        onChange={this.props.textChange}/>
-                <p><input type="checkbox" checked={this.props.likesKids} onChange={this.props.onChange}/>
-                    Only show kitties that likes kids</p>
+                <label htmlFor={'check'} className={'checkbox'}><input id={'check'} type="checkbox" checked={this.props.likesKids} onChange={this.props.onChange}/>
+                    Only show kitties that likes kids</label>
             </form>
         )
     }
