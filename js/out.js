@@ -9631,7 +9631,6 @@ var CatTable = function (_React$Component) {
                     rows.push(_react2.default.createElement(CatCategoryRow, { category: kitty.category, key: kitty.category }));
                     lastCategory = kitty.category;
                 }
-                console.log(_this2.props.filterText, _this2.props.likesKids);
                 if (_this2.props.filterText === '') {
                     if (_this2.props.likesKids === false) {
                         rows.push(_react2.default.createElement(CatRow, { kitty: kitty, key: kitty.name }));
@@ -9760,7 +9759,7 @@ var SearchBar = function (_React$Component4) {
             return _react2.default.createElement(
                 'form',
                 null,
-                _react2.default.createElement('input', { type: 'text', placeholder: 'Search...', value: this.props.filterText,
+                _react2.default.createElement('input', { style: { color: 'white', fontSize: '16px' }, type: 'text', placeholder: 'Search...', value: this.props.filterText,
                     onChange: this.props.textChange }),
                 _react2.default.createElement(
                     'p',
@@ -9807,7 +9806,7 @@ var App = function (_React$Component5) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                null,
+                { className: 'kittyForm' },
                 _react2.default.createElement(
                     'h1',
                     null,
@@ -9817,7 +9816,8 @@ var App = function (_React$Component5) {
                     filterText: this.state.filterText, likesKids: this.state.likesKids }),
                 ' ',
                 _react2.default.createElement(CatTable, {
-                    kitties: this.props.kitties, filterText: this.state.filterText, likesKids: this.state.likesKids })
+                    kitties: this.props.kitties, filterText: this.state.filterText, likesKids: this.state.likesKids }),
+                _react2.default.createElement('img', { src: './img/animal-prints.png' })
             );
         }
     }]);

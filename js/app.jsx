@@ -19,7 +19,6 @@ class CatTable extends React.Component {
                 rows.push(<CatCategoryRow category={kitty.category} key={kitty.category}/>);
                 lastCategory = kitty.category;
             }
-            console.log(this.props.filterText, this.props.likesKids);
             if(this.props.filterText === ''){
                 if(this.props.likesKids === false){
                     rows.push(<CatRow kitty={kitty} key={kitty.name}/>);
@@ -71,7 +70,7 @@ class SearchBar extends React.Component {
     render() {
         return (
             <form>
-                <input type="text" placeholder="Search..." value={this.props.filterText}
+                <input style={{color: 'white', fontSize: '16px'}} type="text" placeholder="Search..." value={this.props.filterText}
                        onChange={this.props.textChange}/>
                 <p><input type="checkbox" checked={this.props.likesKids} onChange={this.props.onChange}/>
                     Only show kitties that likes kids</p>
@@ -101,11 +100,13 @@ class App extends React.Component {
     };
 
     render() {
-        return <div>
+        return <div className={'kittyForm'}>
             <h1>Find your new Kitty Friend!</h1>
             <SearchBar onChange={this.handleChange} textChange={this.handleTextChange}
                                filterText={this.state.filterText} likesKids={this.state.likesKids}/> <CatTable
-            kitties={this.props.kitties} filterText={this.state.filterText} likesKids={this.state.likesKids}/></div>;
+            kitties={this.props.kitties} filterText={this.state.filterText} likesKids={this.state.likesKids}/>
+            <img src={'./img/animal-prints.png'}/>
+        </div>;
     }
 }
 
