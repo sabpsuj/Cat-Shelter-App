@@ -30,8 +30,7 @@ body {
       background-color: rgba(0, 0, 0, 0); }
       body .kittyForm input[type=text]::-webkit-input-placeholder {
         color: white;
-        font-size: 45px;
-        padding-top: 20px; }
+        font-size: 45px; }
   body .checkbox {
     display: flex;
     justify-content: center;
@@ -61,5 +60,57 @@ body {
     position: absolute;
     top: 15%;
     opacity: .12; }
+
+@media (min-width: 1024px) {
+  .kittyForm {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    width: 50%;
+    height: 80vh; }
+    .kittyForm h1 {
+      margin: 15px;
+      font-size: 40px; }
+    .kittyForm input[type=text] {
+      margin: 15px;
+      padding: 35px;
+      border: 4px solid white;
+      border-radius: 50px;
+      width: 92vw;
+      background-color: rgba(0, 0, 0, 0); }
+      .kittyForm input[type=text]::-webkit-input-placeholder {
+        color: white;
+        font-size: 45px; }
+
+  .checkbox {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 45px; }
+
+  input[type=checkbox] {
+    width: 45px;
+    height: 45px;
+    margin-right: 50px; }
+
+  table {
+    border: 1px solid white;
+    width: 85%;
+    height: 75vh;
+    margin: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 50px; }
+    table thead {
+      background-color: rgba(255, 255, 255, 0.31); }
+    table tr, table td {
+      border: 1px solid white;
+      background-color: rgba(255, 255, 255, 0.17);
+      padding: 5px 12px; } }
 
 /*# sourceMappingURL=style.css.map */
