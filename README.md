@@ -3,6 +3,7 @@ Simple single-page application website. Allows search cats by their names.
 One of the workshops did during the coding bootcamp.
 
 >Programming and script languages I used: HTML, Sass, JavaScript, React.
+
 ![Picture](img/screenshot.png)
 ## How to use 
 
