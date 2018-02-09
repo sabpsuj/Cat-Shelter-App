@@ -31,5 +31,5 @@ Here you can find live preview of Cat Shelter App project:
 ```shell
 https://sabpsuj.github.io/CatShelterApp/
 ```
-> Note that now (06.02.2018) it's just mobile version of the app. In the nearest future I plan to extend this also for desktop.
+> Update (09.02.2018): app available for desktop and mobile size.
 
