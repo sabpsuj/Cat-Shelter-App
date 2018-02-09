@@ -5,56 +5,87 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
   background: linear-gradient(135deg, #ed7171 0%, #7d84c9 17%, #9832e0 33%, #2767ed 67%, #00574d 83%, #005755 100%);
-  .kittyForm {
-    z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+#app {
+  border: 1px solid white;
+  @media (min-width: 630px) {
+    width: fit-content;
+    height: fit-content;
+    margin: 5px;
+  }
+}
+
+.kittyForm {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+  h1 {
+    margin: 15px;
+    font-size: 25px;
+    @media (max-width: 600px) {
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
-    justify-content: center;
-    color: white;
-    font-family: sans-serif;
-    width: 100%;
-    height: 100vh;
-    h1 {
-      margin: 15px;
-      font-size: 70px;
+  }
+  input[type=text] {
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 320px;
+    background-color: rgba(0, 0, 0, 0);
+    @media (max-width: 600px) {
+      width: 90vw;
     }
-    input[type=text] {
-      margin: 15px;
-      padding: 35px;
-      border: 4px solid white;
-      border-radius: 50px;
-      width: 92vw;
-      background-color: rgba(0, 0, 0, 0);
-      &::-webkit-input-placeholder {
-        color: white;
-        font-size: 45px;
-      }
+    &::-webkit-input-placeholder {
+      color: white;
+      font-size: 22px;
     }
   }
   .checkbox {
     display: flex;
-    justify-content: center;
     padding: 10px;
-    font-size: 45px;
+    font-size: 20px;
   }
   input[type=checkbox] {
-    width: 45px;
-    height: 45px;
-    margin-right: 50px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
   }
   table {
     border: 1px solid white;
-    width: 85%;
+    width: 95%;
     height: 75vh;
-    margin: 15px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-weight: bold;
     border-radius: 4px;
-    font-size: 50px;
+    font-size: 18px;
+    @media (max-width: 600px) {
+      width: 95vw;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
     thead {
       background-color: rgba(255, 255, 255, 0.31);
     }
@@ -64,7 +95,6 @@ body {
       padding: 5px 12px;
     }
   }
-
   img {
     height: 50%;
     width: auto;
@@ -73,62 +103,3 @@ body {
     opacity: .12;
   }
 }
-@media (min-width: 1024px){
-  .kittyForm {
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    color: white;
-    font-family: sans-serif;
-    width: 50%;
-    height: 80vh;
-    h1 {
-      margin: 15px;
-      font-size: 40px;
-    }
-    input[type=text] {
-      margin: 15px;
-      padding: 35px;
-      border: 4px solid white;
-      border-radius: 50px;
-      width: 92vw;
-      background-color: rgba(0, 0, 0, 0);
-      &::-webkit-input-placeholder {
-        color: white;
-        font-size: 45px;
-      }
-    }
-  }
-  .checkbox {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    font-size: 45px;
-  }
-  input[type=checkbox] {
-    width: 45px;
-    height: 45px;
-    margin-right: 50px;
-  }
-  table {
-    border: 1px solid white;
-    width: 85%;
-    height: 75vh;
-    margin: 15px;
-    font-weight: bold;
-    border-radius: 4px;
-    font-size: 50px;
-    thead {
-      background-color: rgba(255, 255, 255, 0.31);
-    }
-    tr, td {
-      border: 1px solid white;
-      background-color: rgba(255, 255, 255, 0.17);
-      padding: 5px 12px;
-    }
-  }
-}
-
