@@ -18,7 +18,6 @@ Next open:
 ```shell
 http://localhost:3001/
 ```
-> Note that now (06.02.2018) it's just mobile version of the app. In the nearest future I plan to extend this also for desktop.
 
 ## Features
 
